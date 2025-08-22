@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dd72c86cac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src ="images/logo.png" class:"logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1> Hi, I'm <span>Jennifer</span><br>Husemann</h1>
+            <p class="tagline">Welcome to my portfolio! Here you’ll find my experiences, skills, and projects in software development.</p>
+        </div>
+    </div>
+</div>
+
+<!-- about section -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Selfie.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Aspiring Software Engineer passionate about building intuitive, user-focused applications. 
+                   I bring hands-on experience in Java, JavaScript, HTML, and CSS, supported by UX/UI design expertise and working knowledge of C#, .NET, and C++. 
+                   I am enthusiastic about exploring AI-driven solutions to enhance performance, functionality, and engagement. 
+                   Highly adaptable and eager to learn new technologies, I’m committed to delivering innovative, high-quality software and contributing effectively in collaborative, fast-paced environments.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick=" opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick=" opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="experience">
+                    <ul>
+                        <li><span>Software Engineer Intern at Health First</span><br>June 2025 - present</li>
+                        <li> - Engaged in UiPath training to gain foundational knowledge of automation development processes and AI integration.</span>
+                            <br> - Began training in .NET to transition into app development project work
+                            <br> - Assisted in documenting AI co-pilot projects for HR and Marketing teams, including creating a standardized AI documentation template
+                            <br> - Supported the rollout of the Epic program during “Tiger Team” week by helping resolve support tickets.
+                            <br> - Contributed as a user tester for an internal target-tracking application developed by the App Development team.
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Proficient:</span><br>Java, Javascript, HTML, CSS</li>
+                        <li><span>Basic knowledge:</span><br>C#, .NET, C++</li>
+                        <li><span>Other:</span><br>UX/UI Designer, Microsoft Office, Bilingual(English & Spanish)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>BAS in Computer Information Systems Technology (Specialized in Program/Software Development)</span></li>
+                        <li>Eastern Florida State College (August 2023 - August 2025)</li>
+                        <li> - Graduated with a GPA of 3.8
+                            <br> - Awarded President's List in 2025 & 2025
+                            <br> - Awarded Dean's List 2023
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------Projects---------->
+<div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="Projects-list">
+            <div class="Projects">
+                <img src="images/loading.jpg">
+                <div class="layer">
+                    <h3>coming soon</h3>
+                    <p>coming soon</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="Projects">
+                <img src="images/numbergamemockup.png">
+                <div class="layer">
+                    <h3>Guess the Number Game</h3>
+                    <p>Created with JS, HTML, CSS. You have unlimited amount of guesses, play now! </p>
+                    <a href="https://jenniferhusemann1-code.github.io/numbergame/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="Projects">
+                <img src="images/plantsmockup">
+                <div class="layer">
+                    <h3>Beauty Of Plants Website</h3>
+                    <p>Created with JS, HTML, CSS. Learn the importance of plants, benefits, and a few interesting facts. In the footer, there's a link for you to click to read more.</p>
+                    <a href="https://jenniferhusemann1-code.github.io/beautyofplants/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-----------Certifications section--------->
+<div id="Certifications">
+  <div class="container">
+    <h1 class="sub-title">My Certifications</h1>
+    <div class="Certifications-list">
+      <div class="cert-card">
+        <img class="cert-image" src="images/UX Certificate Design Process.PNG" alt="Start the UX Design Process: Empathize, Define, and Ideate">
+        <h2>UX Certificate</h2>
+        <p>Start the UX Design Process: Empathize, Define, and Ideate</p>
+        <a href="https://coursera.org/share/0ecf457b7390f28470043f1812acabfc" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+
+      <div class="cert-card">
+        <img class="cert-image" src="images/UX Certificate Design Experience.PNG" alt="UX Certificate">
+        <h2>UX Certificate</h2>
+        <p>Foundations of User Experience (UX) Design</p>
+        <a href="https://coursera.org/share/33f05714e859d6a717e1857e3b5e2e85" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+
+      <div class="cert-card">
+        <img class="cert-image" src="images/certs/app-dev.jpg" alt="Pending">
+        <h2>Pending</h2>
+        <p>Pending</p>
+        <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+
+      <div class="cert-card">
+        <img class="cert-image" src="images/certs/app-dev.jpg" alt="Pending">
+        <h2>Pending</h2>
+        <p>Pending</p>
+        <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+
+      <div class="cert-card">
+        <img class="cert-image" src="images/certs/app-dev.jpg" alt="pending">
+        <h2>Pending</h2>
+        <p>Pending</p>
+        <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+
+      <div class="cert-card">
+        <img class="cert-image" src="images/certs/app-dev.jpg" alt="pending">
+        <h2>Pending</h2>
+        <p>Pending</p>
+        <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!---------------Contact Section------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/jenniferhusemann" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span class="social-text">LinkedIn</span>
+                    </a>
+                </div>
+                <p><i class="fa-solid fa-paper-plane"></i> Jenniferhusemann@outlook.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 321-960-0496</p>
+                
+                <a href="images/resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form id="contact-form">
+                    <input type="text" name="user_name" placeholder="Your Name" required>
+                    <input type="email" name="user_email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © Jennifer Husemann 2025 :) </p>
+    </div>
+</div>
+
+<!-- EmailJS library -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<!-- Your script file -->
+<script src="script.js"></script>
+
+</body>
+</html>
